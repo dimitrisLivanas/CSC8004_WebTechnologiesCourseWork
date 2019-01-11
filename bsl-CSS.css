@@ -1,0 +1,291 @@
+/* Background color for the html page. Also removed any marging for better fitting */
+html {
+    background-color: #C7C1C1;
+    margin: 0 auto;
+}
+
+/* A container that contains the whole body of our html. Again 0 margin for better fitting and seted max-min width 
+ as in the instructions. Background color as instructed and some padding on the top for better allignment.
+ Position relative to its normal position */
+#mainContent {
+    margin: 0 auto;
+    max-width: 960px;
+    min-width: 510px;
+    background-color: #FFFFFF;
+    padding-top: 30px;
+	position: relative;
+}
+
+/* We hide the hr elements so the hr lines will not be visible in our page */
+hr {
+    visibility: hidden;
+}
+
+/* Font family and color for the headings */
+h1, h2, h3 {
+    font-family: "Lucida Sans Unicode";
+    color: #004B83;
+}
+
+/* Alligment of the h1 element and adding of the "sign language" picture through the 
+ https://internal.cs.ncl.ac.uk/modules/2017-18/csc8004/bsl/css/sign_language.png url */
+h1 {
+    position: relative;
+    padding-top: 40px;
+    padding-left: 10px;
+    background-image:url(https://internal.cs.ncl.ac.uk/modules/2017-18/csc8004/bsl/css/sign_language.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+/* A small alligment for the h3 elements */
+h3 {
+    padding-left: 10px;
+}
+
+/* Font family and some line height for the paragraphs of the html document */
+p {
+    font-family: "Palatino Linotype";
+    line-height: 1.4;
+}
+
+/* Font family for the list elements */
+li {
+
+    font-family: "Palatino Linotype";
+}
+/******************************************************************************************************************/
+/* The styling code for the navigation bar */
+
+/* Positioning of the navigation bar to the top of the page and setting the width as 100% of the parent container */
+.navbar {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index:1;
+}
+
+/* Some styling code for the ul element.*/
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    float: right;
+    background-color: #004B83;
+	width: 100%;
+}
+
+/* Floating left the list elements inside the ul so the navigation bar will be horizontal */
+.navbar li {
+    float: left;
+}
+
+/* Some styling code for the a elements in the list and a display: block command so the user can click in ny part
+ of the navigation bar to navigate through the page */
+.navbar a {
+	display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* The color change when the user hovers over a choice in the navigation bar */
+.navbar a:hover {
+    background-color: #0F87F8;
+	
+}
+
+/*The styling code for the Drop down menu int the navigation bar*/
+
+/* Line of code so the width of the li element in the dropdown menu will inherit the width of its ancestor */
+.dropMenu li{
+	width: inherit;
+}
+
+/* Some positioning of the dropDown ul element and a display: none command so it wont be sown unless.. */
+.dropMenu ul {
+	position: relative;
+	display: none;
+}
+
+/* ...we hover over it with the display: block line of code in the li:hover element. */
+.navbar li:hover ul {
+	left: 0;
+	display: block;
+	width: 100%;
+}
+
+.dropdown li {
+	display: block;
+}
+/*****************************************************************************************************************/
+
+/* Some styling for the introduction container like border up and down and some alligment with padding */
+#intro {
+    border-bottom: 10px solid #004B83;
+    border-top: 10px solid #004B83;
+    padding: 10px;
+    
+}
+
+/* Again some styling for the History Container. */
+#history {
+    border-bottom: 10px solid #004B83;
+    margin: 0;
+    padding: 10px;
+}
+
+/* Positioning of the image inside the history container to the right. Adding the border with a url 
+( https://internal.cs.ncl.ac.uk/modules/2017-18/csc8004/bsl/css/420x370-box.png ) and alligning it correctly. */
+#historyImg {
+    margin-left: 3px;
+    float: right;
+    background-image: url(https://internal.cs.ncl.ac.uk/modules/2017-18/csc8004/bsl/css/420x370-box.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+}
+
+/* Some styling in the linguistics container so it aligns perfectly with the rest of the content. */
+#linguistics {
+    padding: 10px;
+    max-width: 960px;
+    height: 900px;
+    border-bottom: 10px solid #004B83;
+    
+}
+
+/* Added some margin to the list of the text in the Linguistics container so it has some distance from the map image */
+#lingText ul {
+    margin-left: 470px;
+}
+
+/********************************************************************************************************************/
+/* Styling of the map image and the Language families and their icons */
+
+/* Adding the border in the the hole lingImg container positioning it at the left of the Linguistics container and  
+ ginving it width at 45% of the whole container */
+#lingImg {
+    border: 3px double black;
+    padding: 10px;
+    margin-right: 20px;
+    float: left;
+    width: 45%;
+}
+
+#map img  {
+    width: 100%;
+}
+
+/* Some styling for the paragraphs elements inside the container */
+#lingImgText p {
+    text-align: center;
+    border-bottom: 2px solid ;
+    padding-bottom: 10px;
+    line-height: 1.4;
+    font-size: 80%;
+}
+
+
+#legend {
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+/* Some code so the colors of the language families are positioned next to their descriptions */
+#langFams img{
+    float: left;
+    padding-right: 10px;
+}
+
+/* Styling the descriptions under the map image */
+#langFams p {
+    line-height: 1.1;
+    font-size: 80%;
+    padding-left: 10px;
+}
+
+#lingText p,li {
+    line-height: 1.4;
+    clear: right;
+}
+
+
+/* Some styling in the british sign language Container */
+#bsl {
+    padding: 10px;
+    border-bottom: 10px solid #004B83;
+    clear: left;
+}
+
+
+/* Positioning of the video to the right of the bsl Container and adding a url image as a border 
+ (https://internal.cs.ncl.ac.uk/modules/2017-18/csc8004/bsl/css/460x320-box.png) with some styling. */
+#video {
+    background-image:url(https://internal.cs.ncl.ac.uk/modules/2017-18/csc8004/bsl/css/460x320-box.png);
+    background-repeat: no-repeat;
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    text-align: center;
+    font-size: 75%;
+}
+
+
+/* Some code so the pictures in the letters container are displayed as boxes and some styling. */
+.box {
+    max-width: 960px;
+    margin: 10px;
+    display: inline-block;
+    border: 1px solid black;
+    background-color: #004B83;
+    color: white;
+    text-align: center;
+
+}
+
+.box p {
+    margin: 3px
+}
+
+/* Adding borders up and down the numbers container */
+#numbers {
+    border-bottom: 10px solid #004B83;
+    border-top: 10px solid #004B83;
+}
+
+/* Again some code for putting the pictures in the numbers container in boxes. */
+.boxNum {
+    max-width: 960px;
+    margin: 10px;
+    display: inline-block;
+    border: 1px solid black;
+    color: white;
+    text-align: center;
+    background-color: #004B83;
+}
+
+.boxNum p {
+    margin: 3px
+}
+
+/* Some code so the first character in every .boxNum container has a smaller font */
+p.smallNum:first-letter {
+    font-size: 60%;
+}
+
+/* Color change for the headers with .headerColor class */
+.headerColor {
+    color: #DE1F3E;
+}
+
+/* Positioning the infoForm paragraph at the right of the page with some styling. */
+.infoFrom p {
+    text-align: right;
+    font-size: 80%;
+    padding-bottom: 4px;
+	padding-right: 4px;
+}

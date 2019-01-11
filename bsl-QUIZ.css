@@ -1,0 +1,47 @@
+html {
+    background-color: #C7C1C1;
+    
+}
+
+body {
+    margin: 0 
+    auto;
+    padding: 5px;
+    max-width: 960px;
+    min-width: 510px;
+    background-color: white;
+    height: 100%;
+    border: 2px solid #004B83;
+}
+
+h1 {
+	font-family: "Lucida Sans Unicode";
+    color: white;
+    background-color: #004B83;
+    padding-top: 40px;
+    padding-left: 10px;
+    text-decoration: underline;
+}
+
+h2 {
+    font-family: "Lucida Sans Unicode";
+    color: #004B83;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+
+
+p {
+    font-family: "Palatino Linotype";
+    line-height: 1.4;
+}
+
+#footer {
+    color: white;
+    background-color: #004B83;
+}
+
+#footer a {
+    color: white;
+}
